@@ -57,5 +57,5 @@ d-----       2025/3/10  下午 02:37                search
 
 > 2. 使用github 的pages 来部署项目
 ```shell
-
+mkdocs gh-deploy
 ```
