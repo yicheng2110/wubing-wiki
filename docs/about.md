@@ -59,3 +59,5 @@ d-----       2025/3/10  下午 02:37                search
 ```shell
 mkdocs gh-deploy
 ```
+在本地拉取github文档后，如果对文章进行进行变更以后，可以直接执行该命令直接部署pages
+
