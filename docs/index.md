@@ -18,7 +18,6 @@ hide:
 **综上所述，我立刻动手部署了自己的wiki。并不能说是wiki, 只能说是服务于自己的私有知识库，讲自己用到的所有东西（非私有配置）记录下来。且有github作为托管以及提供服务，在稳定性上也有非常大的保证。不至于三天两头的宕机。**
 
 ### 特别鸣谢：
-
 - [MetaCubeX](https://github.com/MetaCubeX)
 - [Mkdocs](https://www.mkdocs.org)
 - [Mkdocs中文翻译](https://hellowac.github.io/mkdocs-docs-zh)
