@@ -444,6 +444,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -482,6 +491,15 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       基础用法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题
     </span>
   </a>
   
@@ -560,6 +578,14 @@ d-----       2025/3/10  下午 02:37                search
 <pre><code class="language-shell">mkdocs gh-deploy
 </code></pre>
 <p>在本地拉取github文档后，如果对文章进行进行变更以后，可以直接执行该命令直接部署pages</p>
+<h3 id="_6"><a class="toclink" href="#_6">常见问题</a><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="pages"><a class="toclink" href="#pages">如果Pages使用了自定义域名则实行以下步骤</a><a class="headerlink" href="#pages" title="Permanent link">&para;</a></h4>
+<p><strong>a. 添加<code>cname</code> dns记录，比如：将<code>wiki.20211001.xyz</code>记录<code>cname</code>到你得<code>github</code>主页地址：<code>github.com/yicheng2110</code></strong></p>
+<p><strong>b. 在master分支docs目录中创建一个<code>CNAME</code>文件，文件内容就是自定义域名地址: <code>wiki.20211001.xyz</code> 不需要加http,https协议头</strong></p>
+<h4 id="github"><a class="toclink" href="#github">如果在github的网页操作了什么配置。可能会导致仓库发生了改变。、</a><a class="headerlink" href="#github" title="Permanent link">&para;</a></h4>
+<p>此时可能执行<code>mkdocs gh-deploy</code>命令可能会失效
+我这边的解决方案为，本地git检出到<code>gh-pages</code>分支，且重新拉取<code>gh-pages</code>仓库，大概率会有新的代码。
+此时再切换到master分支中，执行<code>mkdocs gh-deploy</code>命令记录即可操作成功。</p>
 
 
 
