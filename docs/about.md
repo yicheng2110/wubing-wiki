@@ -61,3 +61,15 @@ mkdocs gh-deploy
 ```
 在本地拉取github文档后，如果对文章进行进行变更以后，可以直接执行该命令直接部署pages
 
+### 常见问题
+#### 如果Pages使用了自定义域名则实行以下步骤 
+
+**a. 添加`cname` dns记录，比如：将`wiki.20211001.xyz`记录`cname`到你得`github`主页地址：`github.com/yicheng2110`**
+
+**b. 在master分支docs目录中创建一个`CNAME`文件，文件内容就是自定义域名地址: `wiki.20211001.xyz` 不需要加http,https协议头**
+
+#### 如果在github的网页操作了什么配置。可能会导致仓库发生了改变。、
+
+此时可能执行`mkdocs gh-deploy`命令可能会失效
+我这边的解决方案为，本地git检出到`gh-pages`分支，且重新拉取`gh-pages`仓库，大概率会有新的代码。
+此时再切换到master分支中，执行`mkdocs gh-deploy`命令记录即可操作成功。
