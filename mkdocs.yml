@@ -80,12 +80,8 @@ plugins:
   - awesome-pages
 
 nav:
-  - 首页: index.md
+  - index.md
   - 技术栈:
-      首页: techStack/index.md
-      Java: techStack/java/index.md
-      Vue: techStack/vue/index.md
-      Docker: techStack/Docker/index.md
-      Python: techStack/python/index.md
+      - techStack/index.md
 #  - Web相关: index.md
   - 关于: about.md
