@@ -37,7 +37,7 @@ mkdir serve
 
 > 1. 自定义部署（生成html）
 ``` shell
-mkdocs build
+mkdocs build                                                                                
 ```
 
 这将创建一个名为site的新目录。 看一下该目录的情况：
