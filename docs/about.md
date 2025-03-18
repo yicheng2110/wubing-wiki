@@ -15,6 +15,7 @@
 因为本文档是基于python的 mkdocs项目，随意拉取代码后第一步就是按照依赖
 
 1. 拉取文档
+
 ``` shell
 # 不需要指定目录
 git clone https://github.com/yicheng2110/wubing-wiki.git
@@ -24,11 +25,13 @@ git clone https://github.com/yicheng2110/wubing-wiki.git "D:/code/wiki"
 ```
 
 2. 按照依赖 (最后基于虚拟环境：`python -m venv .venv`)
+
 ``` shell
 pip install -r requirements.txt
 ```
 
 3. 运行本地环境
+
 ``` shel
 mkdir serve
 ```
@@ -36,11 +39,13 @@ mkdir serve
 #### 发布
 
 > 1. 自定义部署（生成html）
+
 ``` shell
 mkdocs build                                                                                
 ```
 
 这将创建一个名为site的新目录。 看一下该目录的情况：
+
 ``` shell
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
@@ -56,13 +61,16 @@ d-----       2025/3/10  下午 02:37                search
 如果自定义部署子直接把site目录的所有文件上传到指定目录即可
 
 > 2. 使用github 的pages 来部署项目
+
 ```shell
-mkdocs gh-deploy
-```
+    mkdocs gh-deploy
+``` 
+
 在本地拉取github文档后，如果对文章进行进行变更以后，可以直接执行该命令直接部署pages
 
 ### 常见问题
-#### 如果Pages使用了自定义域名则实行以下步骤 
+
+#### 如果Pages使用了自定义域名则实行以下步骤
 
 **a. 添加`cname` dns记录，比如：将`wiki.20211001.xyz`记录`cname`到你得`github`主页地址：`github.com/yicheng2110`**
 
