@@ -16,13 +16,17 @@ hide:
 
     Portainer社区版 汉化版本
 
-
 - __[Mysql 5.7.44(最后的5.7小版本)][Mysql5.7]__
 
-    Portainer社区版 汉化版本
+    Mysql 5.7.44(最后的5.7小版本)
+
+- __[设置Docker代理][设置Docker代理]__
+
+    设置Docker代理
 
 </div>
 
 [OpenJ9:JDK]: ./openj9.md
-[Portainer-cn]: ./Portainer-cn
-[Mysql5.7]: ./Portainer-cn
+[Portainer-cn]: ./Portainer-cn.md
+[Mysql5.7]: ./Mysql5_7.md
+[设置Docker代理]: ./settings_proxy.md
